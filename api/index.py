@@ -5,7 +5,7 @@ import requests
 
 TOKEN = os.environ.get("TELEGRAM_TOKEN")
 if not TOKEN:
-    TOKEN = 8411060036:AAHXjG8oeaP-BQSbKEpNURg_taNuyAfEy3Y   # <-- вставьте реальный токен
+    TOKEN = "8411060036:AAHmND0hwezF9r-GOjCuw6MEMyoIzKup6XE"   # <-- вставьте реальный токен
 
 URL = f"https://api.telegram.org/bot{TOKEN}"
 
