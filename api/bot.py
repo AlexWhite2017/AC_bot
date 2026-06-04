@@ -4,7 +4,7 @@ from http.server import BaseHTTPRequestHandler
 import requests
 
 # Токен лучше потом заменить на переменную окружения, но для первого раза вставим прямо
-TELEGRAM_TOKEN = "ВАШ_ТОКЕН_БОТА"
+TELEGRAM_TOKEN = 8411060036:AAHXjG8oeaP-BQSbKEpNURg_taNuyAfEy3Y
 URL = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}"
 
 class handler(BaseHTTPRequestHandler):
