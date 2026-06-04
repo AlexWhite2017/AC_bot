@@ -6,7 +6,7 @@ import requests
 # Токен берём из переменной окружения, если нет – вшиваем (замените на свой)
 TOKEN = os.environ.get("TELEGRAM_TOKEN")
 if not TOKEN:
-    TOKEN = "СЮДА_ВАШ_ТОКЕН_БОТА"   # <-- обязательно вставьте настоящий токен
+    TOKEN = 8411060036:AAHXjG8oeaP-BQSbKEpNURg_taNuyAfEy3Y   # <-- обязательно вставьте настоящий токен
 
 TELEGRAM_API = f"https://api.telegram.org/bot{TOKEN}"
 
