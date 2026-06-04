@@ -7,6 +7,11 @@ TOKEN = os.environ.get("TELEGRAM_TOKEN")  # переменная окружен�
 URL = f"https://api.telegram.org/bot{TOKEN}"
 
 class handler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header('Content-type', 'text/html; charset=utf-8')
+        self.end_headers()
+        self.wfile.write("Бот работает. Webhook настроен.".encode("utf-8"))
     def do_POST(self):
         length = int(self.headers.get('Content-Length', 0))
         body = self.rfile.read(length)
